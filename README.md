@@ -90,6 +90,11 @@ The project consists of the following Java files:
 - Ensure that the target server supports the request methods being tested.
 
 ## Author
-Visweish KM
+### Visweish KM
+
+
+The client side page used in this demo - https://duty-dash.vercel.app/
+
+The server used in this demo - https://todo-application-rho-sand.vercel.app/
 
 ---
