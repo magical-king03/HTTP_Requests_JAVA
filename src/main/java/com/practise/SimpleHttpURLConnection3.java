@@ -1,4 +1,4 @@
-package com.lonnycorn;
+package com.practise;
 
 import org.json.JSONObject;
 
@@ -10,17 +10,17 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SimpleHttpURLConnection4 {
+public class SimpleHttpURLConnection3 {
     public static void main(String[] args) {
 
         String text;
         StringBuffer content = new StringBuffer();
 
         try{
-            URL url = new URL("https://todo-application-rho-sand.vercel.app/api-tasks/67d859a616b790480b680845");
+            URL url = new URL("https://todo-application-rho-sand.vercel.app/add-task");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
-            conn.setRequestMethod("PUT");
+            conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setDoOutput(true);
 
@@ -28,7 +28,8 @@ public class SimpleHttpURLConnection4 {
 //            System.out.println("The status code: "+ statusCode);
 //            System.out.println();
 
-            String postData = "{\"taskDesc\":\"Do the task assigned from JAVA.\",\"taskDate\":\"2025-03-17T00:00:00.000Z\",\"addedBy\":\"visweish80@gmail.com\",\"taskName\":\"New Task from Java\"}";
+            String postData = "{\"taskDesc\":\"Complete the assigned courses. Go through Java backend very clearly.\",\"taskDate\":\"2025-03-21T00:00:00.000Z\",\"addedBy\":\"visweish80@gmail.com\",\"taskName\":\"Complete the courses.\"}";
+
 
             try (OutputStream os = conn.getOutputStream()) {
                 byte[] input = postData.getBytes("UTF-8");
