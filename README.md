@@ -60,7 +60,7 @@ The project consists of the following Java files:
 
 7. **Timeouts**  
    - Demonstrates setting connection and read timeouts.
-   - Handles timeout exceptions gracefully.
+   - Timeout exception is shown below.
    
    _Example Output:_  
    ![image](https://github.com/user-attachments/assets/5ef9932b-3f01-4c4f-a1a1-1603910583bb)
