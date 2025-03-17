@@ -9,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SimpleHttpURLConnection5 {
+public class SimpleHttpURLConnection_DELETE_Request {
     public static void main(String[] args) {
 
         String text;

@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 
 import org.json.JSONArray;
 
-public class SimpleHttpURLConnection2 {
+public class SimpleHttpURLConnection_GET_Request {
     public static void main(String[] args) {
         BufferedReader read;
         String text;

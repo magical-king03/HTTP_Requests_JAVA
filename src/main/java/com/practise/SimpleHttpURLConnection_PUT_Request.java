@@ -10,7 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SimpleHttpURLConnection4 {
+public class SimpleHttpURLConnection_PUT_Request {
     public static void main(String[] args) {
 
         String text;

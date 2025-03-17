@@ -9,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SimpleHttpURLConnection6 {
+public class SimpleHttpURLConnection_HEAD_Request {
     public static void main(String[] args) {
 
         BufferedReader read;
@@ -21,13 +21,8 @@ public class SimpleHttpURLConnection6 {
             URL url = new URL("https://duty-dash.vercel.app/");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
-            conn.setRequestMethod("GET");
+            conn.setRequestMethod("HEAD");
 
-            //Reading from the website
-            conn.setReadTimeout(15000);
-
-            //if network connection is the problem
-            conn.setConnectTimeout(1000);
 
 //            conn.setDoOutput(true);
 
